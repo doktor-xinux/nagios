@@ -2,11 +2,11 @@ version: '3.7'
 services:
   nagios:
     image: manios/nagios:latest
-    volumes:
-      - ./etc:/opt/nagios/etc
-      - ./var:/opt/nagios/var
-      - ./ssmtp.conf:/etc/ssmtp/ssmtp.conf 
-      - ./Custom-Nagios-Plugins:/opt/Custom-Nagios-Plugins
+    #volumes:
+    #  - ./etc:/opt/nagios/etc
+    #  - ./var:/opt/nagios/var
+    #  - ./ssmtp.conf:/etc/ssmtp/ssmtp.conf 
+    #  - ./Custom-Nagios-Plugins:/opt/Custom-Nagios-Plugins
     environment:
       NAGIOSADMIN_USER: 'admin'
       NAGIOSADMIN_PASS: 'sysadm'
